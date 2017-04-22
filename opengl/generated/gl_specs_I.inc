@@ -3,7 +3,7 @@
 @defproc[(glIglooInterfaceSGIX (pname exact-integer?) (params gl-pointer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/igloo_interface.txt"]{@racket[GL_SGIX_igloo_interface]}.
 }
-@defproc[(glImageTransformParameterfHP (target exact-integer?) (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glImageTransformParameterfHP (target exact-integer?) (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/HP/image_transform.txt"]{@racket[GL_HP_image_transform]}.
 }
 @defproc[(glImageTransformParameterfvHP (target exact-integer?) (pname exact-integer?) (params f32vector?)) any]{
@@ -21,7 +21,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/x11_sync_object.t
 @defproc[(glIndexFormatNV (type exact-integer?) (stride exact-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_buffer_unified_memory.txt"]{@racket[GL_NV_vertex_buffer_unified_memory]}.
 }
-@defproc[(glIndexFuncEXT (func exact-integer?) (ref flonum?)) any]{
+@defproc[(glIndexFuncEXT (func exact-integer?) (ref single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/index_func.txt"]{@racket[GL_EXT_index_func]}.
 }
 @defproc[(glIndexMask (mask exact-nonnegative-integer?)) any]{
@@ -54,12 +54,12 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glIndex.xml"]{glIndex manpage}.
 }
-@defproc[(glIndexf (c flonum?)) any]{
+@defproc[(glIndexf (c single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glIndex.xml"]{glIndex manpage}.
 }
-@defproc[(glIndexfv (c flonum?)) any]{
+@defproc[(glIndexfv (c single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glIndex.xml"]{glIndex manpage}.
@@ -111,7 +111,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glInterleavedArrays.xml"]{glInterleavedArrays manpage}.
 }
-@defproc[(glInterpolatePathsNV (resultPath exact-nonnegative-integer?) (pathA exact-nonnegative-integer?) (pathB exact-nonnegative-integer?) (weight flonum?)) any]{
+@defproc[(glInterpolatePathsNV (resultPath exact-nonnegative-integer?) (pathA exact-nonnegative-integer?) (pathB exact-nonnegative-integer?) (weight single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
 @defproc[(glInvalidateBufferData (buffer exact-nonnegative-integer?)) any]{
@@ -204,10 +204,10 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/occlusion_query.tx
 @defproc[(glIsPathNV (path exact-nonnegative-integer?)) boolean?]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
-@defproc[(glIsPointInFillPathNV (path exact-nonnegative-integer?) (mask exact-nonnegative-integer?) (x flonum?) (y flonum?)) boolean?]{
+@defproc[(glIsPointInFillPathNV (path exact-nonnegative-integer?) (mask exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?)) boolean?]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
-@defproc[(glIsPointInStrokePathNV (path exact-nonnegative-integer?) (x flonum?) (y flonum?)) boolean?]{
+@defproc[(glIsPointInStrokePathNV (path exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?)) boolean?]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
 @defproc[(glIsProgram (program exact-nonnegative-integer?)) boolean?]{

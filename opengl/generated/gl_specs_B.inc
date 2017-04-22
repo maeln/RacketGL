@@ -248,7 +248,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/coordinate_frame.
 @defproc[(glBinormal3dvEXT (v f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/coordinate_frame.txt"]{@racket[GL_EXT_coordinate_frame]}.
 }
-@defproc[(glBinormal3fEXT (bx flonum?) (by flonum?) (bz flonum?)) any]{
+@defproc[(glBinormal3fEXT (bx single-flonum?) (by single-flonum?) (bz single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/coordinate_frame.txt"]{@racket[GL_EXT_coordinate_frame]}.
 }
 @defproc[(glBinormal3fvEXT (v f32vector?)) any]{
@@ -269,17 +269,17 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/coordinate_frame.
 @defproc[(glBinormalPointerEXT (type exact-integer?) (stride exact-integer?) (pointer gl-pointer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/coordinate_frame.txt"]{@racket[GL_EXT_coordinate_frame]}.
 }
-@defproc[(glBitmap (width exact-integer?) (height exact-integer?) (xorig flonum?) (yorig flonum?) (xmove flonum?) (ymove flonum?) (bitmap (or/c string? bytes?))) any]{
+@defproc[(glBitmap (width exact-integer?) (height exact-integer?) (xorig single-flonum?) (yorig single-flonum?) (xmove single-flonum?) (ymove single-flonum?) (bitmap (or/c string? bytes?))) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glBitmap.xml"]{glBitmap manpage}.
 }
-@defproc[(glBlendColor (red flonum?) (green flonum?) (blue flonum?) (alpha flonum?)) any]{
+@defproc[(glBlendColor (red single-flonum?) (green single-flonum?) (blue single-flonum?) (alpha single-flonum?)) any]{
 Version 1.2.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glBlendColor.xml"]{glBlendColor manpage}.
 }
-@defproc[(glBlendColorEXT (red flonum?) (green flonum?) (blue flonum?) (alpha flonum?)) any]{
+@defproc[(glBlendColorEXT (red single-flonum?) (green single-flonum?) (blue single-flonum?) (alpha single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/blend_color.txt"]{@racket[GL_EXT_blend_color]}.
 
 Alias of @racket[glBlendColor].

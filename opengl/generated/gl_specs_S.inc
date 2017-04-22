@@ -1,11 +1,11 @@
 #lang scribble/manual
 @title{glS...}
-@defproc[(glSampleCoverage (value flonum?) (invert boolean?)) any]{
+@defproc[(glSampleCoverage (value single-flonum?) (invert boolean?)) any]{
 Version 1.3.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glSampleCoverage.xml"]{glSampleCoverage manpage}.
 }
-@defproc[(glSampleCoverageARB (value flonum?) (invert boolean?)) any]{
+@defproc[(glSampleCoverageARB (value single-flonum?) (invert boolean?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/multisample.txt"]{@racket[GL_ARB_multisample]}.
 
 Alias of @racket[glSampleCoverage].
@@ -13,13 +13,13 @@ Alias of @racket[glSampleCoverage].
 @defproc[(glSampleMapATI (dst exact-nonnegative-integer?) (interp exact-nonnegative-integer?) (swizzle exact-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/fragment_shader.txt"]{@racket[GL_ATI_fragment_shader]}.
 }
-@defproc[(glSampleMaskEXT (value flonum?) (invert boolean?)) any]{
+@defproc[(glSampleMaskEXT (value single-flonum?) (invert boolean?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/multisample.txt"]{@racket[GL_EXT_multisample]}.
 }
 @defproc[(glSampleMaskIndexedNV (index exact-nonnegative-integer?) (mask exact-nonnegative-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/explicit_multisample.txt"]{@racket[GL_NV_explicit_multisample]}.
 }
-@defproc[(glSampleMaskSGIS (value flonum?) (invert boolean?)) any]{
+@defproc[(glSampleMaskSGIS (value single-flonum?) (invert boolean?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIS/multisample.txt"]{@racket[GL_SGIS_multisample]}.
 
 Alias of @racket[glSampleMaskEXT].
@@ -43,7 +43,7 @@ Version 1.2.
 @defproc[(glSamplerParameterIuiv (sampler exact-nonnegative-integer?) (pname exact-integer?) (param u32vector?)) any]{
 Version 1.2.
 }
-@defproc[(glSamplerParameterf (sampler exact-nonnegative-integer?) (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glSamplerParameterf (sampler exact-nonnegative-integer?) (pname exact-integer?) (param single-flonum?)) any]{
 Version 1.2.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glSamplerParameter.xml"]{glSamplerParameter manpage}.
@@ -68,7 +68,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glScale.xml"]{glScale manpage}.
 }
-@defproc[(glScalef (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glScalef (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glScale.xml"]{glScale manpage}.
@@ -132,13 +132,13 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/secondary_color.t
 
 Alias of @racket[glSecondaryColor3dv].
 }
-@defproc[(glSecondaryColor3f (red flonum?) (green flonum?) (blue flonum?)) any]{
+@defproc[(glSecondaryColor3f (red single-flonum?) (green single-flonum?) (blue single-flonum?)) any]{
 Version 1.4.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glSecondaryColor.xml"]{glSecondaryColor manpage}.
 }
-@defproc[(glSecondaryColor3fEXT (red flonum?) (green flonum?) (blue flonum?)) any]{
+@defproc[(glSecondaryColor3fEXT (red single-flonum?) (green single-flonum?) (blue single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/secondary_color.txt"]{@racket[GL_EXT_secondary_color]}.
 
 Alias of @racket[glSecondaryColor3f].
@@ -365,7 +365,7 @@ Version 4.3.
 @defproc[(glSharpenTexFuncSGIS (target exact-integer?) (n exact-integer?) (points f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIS/sharpen_texture.txt"]{@racket[GL_SGIS_sharpen_texture]}.
 }
-@defproc[(glSpriteParameterfSGIX (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glSpriteParameterfSGIX (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/sprite.txt"]{@racket[GL_SGIX_sprite]}.
 }
 @defproc[(glSpriteParameterfvSGIX (pname exact-integer?) (params f32vector?)) any]{

@@ -37,7 +37,7 @@ Alias of @racket[glClampColor].
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glClear.xml"]{glClear manpage}.
 }
-@defproc[(glClearAccum (red flonum?) (green flonum?) (blue flonum?) (alpha flonum?)) any]{
+@defproc[(glClearAccum (red single-flonum?) (green single-flonum?) (blue single-flonum?) (alpha single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glClearAccum.xml"]{glClearAccum manpage}.
@@ -48,7 +48,7 @@ Version 4.3.
 @defproc[(glClearBufferSubData (target exact-integer?) (internalformat exact-integer?) (offset exact-integer?) (size exact-integer?) (format exact-integer?) (type exact-integer?) (data gl-pointer?)) any]{
 Version 4.3.
 }
-@defproc[(glClearBufferfi (buffer exact-integer?) (drawbuffer exact-integer?) (depth flonum?) (stencil exact-integer?)) any]{
+@defproc[(glClearBufferfi (buffer exact-integer?) (drawbuffer exact-integer?) (depth single-flonum?) (stencil exact-integer?)) any]{
 Version 3.0.
 }
 @defproc[(glClearBufferfv (buffer exact-integer?) (drawbuffer exact-integer?) (value f32vector?)) any]{
@@ -66,7 +66,7 @@ Version 3.0.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glClearBuffer.xml"]{glClearBuffer manpage}.
 }
-@defproc[(glClearColor (red flonum?) (green flonum?) (blue flonum?) (alpha flonum?)) any]{
+@defproc[(glClearColor (red single-flonum?) (green single-flonum?) (blue single-flonum?) (alpha single-flonum?)) any]{
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glClearColor.xml"]{glClearColor manpage}.
 }
@@ -83,12 +83,12 @@ See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glClearDepth.xml"]
 @defproc[(glClearDepthdNV (depth real?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/depth_buffer_float.txt"]{@racket[GL_NV_depth_buffer_float]}.
 }
-@defproc[(glClearDepthf (d flonum?)) any]{
+@defproc[(glClearDepthf (d single-flonum?)) any]{
 Version 4.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glClearDepth.xml"]{glClearDepth manpage}.
 }
-@defproc[(glClearIndex (c flonum?)) any]{
+@defproc[(glClearIndex (c single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glClearIndex.xml"]{glClearIndex manpage}.
@@ -150,12 +150,12 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glColor.xml"]{glColor manpage}.
 }
-@defproc[(glColor3f (red flonum?) (green flonum?) (blue flonum?)) any]{
+@defproc[(glColor3f (red single-flonum?) (green single-flonum?) (blue single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glColor.xml"]{glColor manpage}.
 }
-@defproc[(glColor3fVertex3fSUN (r flonum?) (g flonum?) (b flonum?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glColor3fVertex3fSUN (r single-flonum?) (g single-flonum?) (b single-flonum?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glColor3fVertex3fvSUN (c f32vector?) (v f32vector?)) any]{
@@ -242,12 +242,12 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glColor.xml"]{glColor manpage}.
 }
-@defproc[(glColor4f (red flonum?) (green flonum?) (blue flonum?) (alpha flonum?)) any]{
+@defproc[(glColor4f (red single-flonum?) (green single-flonum?) (blue single-flonum?) (alpha single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glColor.xml"]{glColor manpage}.
 }
-@defproc[(glColor4fNormal3fVertex3fSUN (r flonum?) (g flonum?) (b flonum?) (a flonum?) (nx flonum?) (ny flonum?) (nz flonum?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glColor4fNormal3fVertex3fSUN (r single-flonum?) (g single-flonum?) (b single-flonum?) (a single-flonum?) (nx single-flonum?) (ny single-flonum?) (nz single-flonum?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glColor4fNormal3fVertex3fvSUN (c f32vector?) (n f32vector?) (v f32vector?)) any]{
@@ -289,13 +289,13 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glColor.xml"]{glColor manpage}.
 }
-@defproc[(glColor4ubVertex2fSUN (r (integer-in 0 255)) (g (integer-in 0 255)) (b (integer-in 0 255)) (a (integer-in 0 255)) (x flonum?) (y flonum?)) any]{
+@defproc[(glColor4ubVertex2fSUN (r (integer-in 0 255)) (g (integer-in 0 255)) (b (integer-in 0 255)) (a (integer-in 0 255)) (x single-flonum?) (y single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glColor4ubVertex2fvSUN (c (or/c string? bytes?)) (v f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
-@defproc[(glColor4ubVertex3fSUN (r (integer-in 0 255)) (g (integer-in 0 255)) (b (integer-in 0 255)) (a (integer-in 0 255)) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glColor4ubVertex3fSUN (r (integer-in 0 255)) (g (integer-in 0 255)) (b (integer-in 0 255)) (a (integer-in 0 255)) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glColor4ubVertex3fvSUN (c (or/c string? bytes?)) (v f32vector?)) any]{
@@ -439,7 +439,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/register_combiners
 @defproc[(glCombinerOutputNV (stage exact-integer?) (portion exact-integer?) (abOutput exact-integer?) (cdOutput exact-integer?) (sumOutput exact-integer?) (scale exact-integer?) (bias exact-integer?) (abDotProduct boolean?) (cdDotProduct boolean?) (muxSum boolean?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/register_combiners.txt"]{@racket[GL_NV_register_combiners]}.
 }
-@defproc[(glCombinerParameterfNV (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glCombinerParameterfNV (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/register_combiners.txt"]{@racket[GL_NV_register_combiners]}.
 }
 @defproc[(glCombinerParameterfvNV (pname exact-integer?) (params f32vector?)) any]{
@@ -585,13 +585,13 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/convolution.txt"]
 
 Alias of @racket[glConvolutionFilter2D].
 }
-@defproc[(glConvolutionParameterf (target exact-integer?) (pname exact-integer?) (params flonum?)) any]{
+@defproc[(glConvolutionParameterf (target exact-integer?) (pname exact-integer?) (params single-flonum?)) any]{
 Version 1.2.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glConvolutionParameter.xml"]{glConvolutionParameter manpage}.
 }
-@defproc[(glConvolutionParameterfEXT (target exact-integer?) (pname exact-integer?) (params flonum?)) any]{
+@defproc[(glConvolutionParameterfEXT (target exact-integer?) (pname exact-integer?) (params single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/convolution.txt"]{@racket[GL_EXT_convolution]}.
 
 Alias of @racket[glConvolutionParameterf].

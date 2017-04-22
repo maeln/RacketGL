@@ -24,7 +24,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/polynomial_ffd.t
 @defproc[(glDeformationMap3dSGIX (target exact-integer?) (u1 real?) (u2 real?) (ustride exact-integer?) (uorder exact-integer?) (v1 real?) (v2 real?) (vstride exact-integer?) (vorder exact-integer?) (w1 real?) (w2 real?) (wstride exact-integer?) (worder exact-integer?) (points f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/polynomial_ffd.txt"]{@racket[GL_SGIX_polynomial_ffd]}.
 }
-@defproc[(glDeformationMap3fSGIX (target exact-integer?) (u1 flonum?) (u2 flonum?) (ustride exact-integer?) (uorder exact-integer?) (v1 flonum?) (v2 flonum?) (vstride exact-integer?) (vorder exact-integer?) (w1 flonum?) (w2 flonum?) (wstride exact-integer?) (worder exact-integer?) (points f32vector?)) any]{
+@defproc[(glDeformationMap3fSGIX (target exact-integer?) (u1 single-flonum?) (u2 single-flonum?) (ustride exact-integer?) (uorder exact-integer?) (v1 single-flonum?) (v2 single-flonum?) (vstride exact-integer?) (vorder exact-integer?) (w1 single-flonum?) (w2 single-flonum?) (wstride exact-integer?) (worder exact-integer?) (points f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/polynomial_ffd.txt"]{@racket[GL_SGIX_polynomial_ffd]}.
 }
 @defproc[(glDeleteAsyncMarkersSGIX (marker exact-nonnegative-integer?) (range exact-integer?)) any]{
@@ -193,7 +193,7 @@ See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glDepthRangeIndexe
 @defproc[(glDepthRangedNV (zNear real?) (zFar real?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/depth_buffer_float.txt"]{@racket[GL_NV_depth_buffer_float]}.
 }
-@defproc[(glDepthRangef (n flonum?) (f flonum?)) any]{
+@defproc[(glDepthRangef (n single-flonum?) (f single-flonum?)) any]{
 Version 4.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glDepthRange.xml"]{glDepthRange manpage}.

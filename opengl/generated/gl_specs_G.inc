@@ -198,7 +198,7 @@ See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glGetActiveUniform
 @defproc[(glGetActiveVaryingNV (program exact-nonnegative-integer?) (index exact-nonnegative-integer?) (bufSize exact-integer?)) (values exact-integer? exact-integer? exact-integer? bytes?)]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/transform_feedback.txt"]{@racket[GL_NV_transform_feedback]}.
 }
-@defproc[(glGetArrayObjectfvATI (array exact-integer?) (pname exact-integer?)) flonum?]{
+@defproc[(glGetArrayObjectfvATI (array exact-integer?) (pname exact-integer?)) single-flonum?]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_array_object.txt"]{@racket[GL_ATI_vertex_array_object]}.
 }
 @defproc[(glGetArrayObjectivATI (array exact-integer?) (pname exact-integer?)) exact-integer?]{
@@ -722,7 +722,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/shading_language_
 @defproc[(glGetNamedStringivARB (namelen exact-integer?) (name (or/c string? bytes?)) (pname exact-integer?)) s32vector?]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/shading_language_include.txt"]{@racket[GL_ARB_shading_language_include]}.
 }
-@defproc[(glGetObjectBufferfvATI (buffer exact-nonnegative-integer?) (pname exact-integer?)) flonum?]{
+@defproc[(glGetObjectBufferfvATI (buffer exact-nonnegative-integer?) (pname exact-integer?)) single-flonum?]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_array_object.txt"]{@racket[GL_ATI_vertex_array_object]}.
 }
 @defproc[(glGetObjectBufferivATI (buffer exact-nonnegative-integer?) (pname exact-integer?)) exact-integer?]{
@@ -764,7 +764,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt
 @defproc[(glGetPathDashArrayNV (path exact-nonnegative-integer?) (dashArray f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
-@defproc[(glGetPathLengthNV (path exact-nonnegative-integer?) (startSegment exact-integer?) (numSegments exact-integer?)) flonum?]{
+@defproc[(glGetPathLengthNV (path exact-nonnegative-integer?) (startSegment exact-integer?) (numSegments exact-integer?)) single-flonum?]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
 @defproc[(glGetPathMetricRangeNV (metricQueryMask exact-nonnegative-integer?) (firstPathName exact-nonnegative-integer?) (numPaths exact-integer?) (stride exact-integer?) (metrics f32vector?)) any]{
@@ -779,7 +779,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt
 @defproc[(glGetPathParameterivNV (path exact-nonnegative-integer?) (pname exact-integer?)) s32vector?]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
-@defproc[(glGetPathSpacingNV (pathListMode exact-integer?) (numPaths exact-integer?) (pathNameType exact-integer?) (paths gl-pointer?) (pathBase exact-nonnegative-integer?) (advanceScale flonum?) (kerningScale flonum?) (transformType exact-integer?) (returnedSpacing f32vector?)) any]{
+@defproc[(glGetPathSpacingNV (pathListMode exact-integer?) (numPaths exact-integer?) (pathNameType exact-integer?) (paths gl-pointer?) (pathBase exact-nonnegative-integer?) (advanceScale single-flonum?) (kerningScale single-flonum?) (transformType exact-integer?) (returnedSpacing f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
 @defproc[(glGetPathTexGenfvNV (texCoordSet exact-integer?) (pname exact-integer?)) f32vector?]{
@@ -1274,7 +1274,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/gpu_shader4.txt"]
 
 Alias of @racket[glGetUniformuiv].
 }
-@defproc[(glGetVariantArrayObjectfvATI (id exact-nonnegative-integer?) (pname exact-integer?)) flonum?]{
+@defproc[(glGetVariantArrayObjectfvATI (id exact-nonnegative-integer?) (pname exact-integer?)) single-flonum?]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_array_object.txt"]{@racket[GL_ATI_vertex_array_object]}.
 }
 @defproc[(glGetVariantArrayObjectivATI (id exact-nonnegative-integer?) (pname exact-integer?)) exact-integer?]{
@@ -1369,7 +1369,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_program.tx
 
 Alias of @racket[glGetVertexAttribfv].
 }
-@defproc[(glGetVertexAttribfvNV (index exact-nonnegative-integer?) (pname exact-integer?)) flonum?]{
+@defproc[(glGetVertexAttribfvNV (index exact-nonnegative-integer?) (pname exact-integer?)) single-flonum?]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt"]{@racket[GL_NV_vertex_program]}.
 
 Alias of @racket[glGetVertexAttribfv].
@@ -1473,7 +1473,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/global_alpha.txt"
 @defproc[(glGlobalAlphaFactordSUN (factor real?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/global_alpha.txt"]{@racket[GL_SUN_global_alpha]}.
 }
-@defproc[(glGlobalAlphaFactorfSUN (factor flonum?)) any]{
+@defproc[(glGlobalAlphaFactorfSUN (factor single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/global_alpha.txt"]{@racket[GL_SUN_global_alpha]}.
 }
 @defproc[(glGlobalAlphaFactoriSUN (factor exact-integer?)) any]{

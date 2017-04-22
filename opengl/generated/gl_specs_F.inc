@@ -100,24 +100,24 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/fog_coord.txt"]{@
 
 Alias of @racket[glFogCoorddv].
 }
-@defproc[(glFogCoordf (coord flonum?)) any]{
+@defproc[(glFogCoordf (coord single-flonum?)) any]{
 Version 1.4.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glFogCoord.xml"]{glFogCoord manpage}.
 }
-@defproc[(glFogCoordfEXT (coord flonum?)) any]{
+@defproc[(glFogCoordfEXT (coord single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/fog_coord.txt"]{@racket[GL_EXT_fog_coord]}.
 
 Alias of @racket[glFogCoordf].
 }
-@defproc[(glFogCoordfv (coord flonum?)) any]{
+@defproc[(glFogCoordfv (coord single-flonum?)) any]{
 Version 1.4.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glFogCoord.xml"]{glFogCoord manpage}.
 }
-@defproc[(glFogCoordfvEXT (coord flonum?)) any]{
+@defproc[(glFogCoordfvEXT (coord single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/fog_coord.txt"]{@racket[GL_EXT_fog_coord]}.
 
 Alias of @racket[glFogCoordfv].
@@ -131,7 +131,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/half_float.txt"]{@
 @defproc[(glFogFuncSGIS (n exact-integer?) (points f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIS/fog_function.txt"]{@racket[GL_SGIS_fog_function]}.
 }
-@defproc[(glFogf (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glFogf (pname exact-integer?) (param single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glFog.xml"]{glFog manpage}.
@@ -154,7 +154,7 @@ See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glFog.xml"]{glFog 
 @defproc[(glFragmentColorMaterialSGIX (face exact-integer?) (mode exact-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/fragment_lighting.txt"]{@racket[GL_SGIX_fragment_lighting]}.
 }
-@defproc[(glFragmentLightModelfSGIX (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glFragmentLightModelfSGIX (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/fragment_lighting.txt"]{@racket[GL_SGIX_fragment_lighting]}.
 }
 @defproc[(glFragmentLightModelfvSGIX (pname exact-integer?) (params f32vector?)) any]{
@@ -166,7 +166,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/fragment_lightin
 @defproc[(glFragmentLightModelivSGIX (pname exact-integer?) (params s32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/fragment_lighting.txt"]{@racket[GL_SGIX_fragment_lighting]}.
 }
-@defproc[(glFragmentLightfSGIX (light exact-integer?) (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glFragmentLightfSGIX (light exact-integer?) (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/fragment_lighting.txt"]{@racket[GL_SGIX_fragment_lighting]}.
 }
 @defproc[(glFragmentLightfvSGIX (light exact-integer?) (pname exact-integer?) (params f32vector?)) any]{
@@ -178,7 +178,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/fragment_lightin
 @defproc[(glFragmentLightivSGIX (light exact-integer?) (pname exact-integer?) (params s32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/fragment_lighting.txt"]{@racket[GL_SGIX_fragment_lighting]}.
 }
-@defproc[(glFragmentMaterialfSGIX (face exact-integer?) (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glFragmentMaterialfSGIX (face exact-integer?) (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/fragment_lighting.txt"]{@racket[GL_SGIX_fragment_lighting]}.
 }
 @defproc[(glFragmentMaterialfvSGIX (face exact-integer?) (pname exact-integer?) (params f32vector?)) any]{

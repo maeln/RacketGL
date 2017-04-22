@@ -1,6 +1,6 @@
 #lang scribble/manual
 @title{glA...}
-@defproc[(glAccum (op exact-integer?) (value flonum?)) any]{
+@defproc[(glAccum (op exact-integer?) (value single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glAccum.xml"]{glAccum manpage}.
@@ -38,7 +38,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/fragment_shader.t
 @defproc[(glAlphaFragmentOp3ATI (op exact-integer?) (dst exact-nonnegative-integer?) (dstMod exact-nonnegative-integer?) (arg1 exact-nonnegative-integer?) (arg1Rep exact-nonnegative-integer?) (arg1Mod exact-nonnegative-integer?) (arg2 exact-nonnegative-integer?) (arg2Rep exact-nonnegative-integer?) (arg2Mod exact-nonnegative-integer?) (arg3 exact-nonnegative-integer?) (arg3Rep exact-nonnegative-integer?) (arg3Mod exact-nonnegative-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/fragment_shader.txt"]{@racket[GL_ATI_fragment_shader]}.
 }
-@defproc[(glAlphaFunc (func exact-integer?) (ref flonum?)) any]{
+@defproc[(glAlphaFunc (func exact-integer?) (ref single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glAlphaFunc.xml"]{glAlphaFunc manpage}.

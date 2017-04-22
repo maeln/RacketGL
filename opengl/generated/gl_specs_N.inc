@@ -39,7 +39,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_acce
 @defproc[(glNamedProgramLocalParameter4dvEXT (program exact-nonnegative-integer?) (target exact-integer?) (index exact-nonnegative-integer?) (params f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
-@defproc[(glNamedProgramLocalParameter4fEXT (program exact-nonnegative-integer?) (target exact-integer?) (index exact-nonnegative-integer?) (x flonum?) (y flonum?) (z flonum?) (w flonum?)) any]{
+@defproc[(glNamedProgramLocalParameter4fEXT (program exact-nonnegative-integer?) (target exact-integer?) (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?) (w single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
 @defproc[(glNamedProgramLocalParameter4fvEXT (program exact-nonnegative-integer?) (target exact-integer?) (index exact-nonnegative-integer?) (params f32vector?)) any]{
@@ -109,12 +109,12 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glNormal.xml"]{glNormal manpage}.
 }
-@defproc[(glNormal3f (nx flonum?) (ny flonum?) (nz flonum?)) any]{
+@defproc[(glNormal3f (nx single-flonum?) (ny single-flonum?) (nz single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glNormal.xml"]{glNormal manpage}.
 }
-@defproc[(glNormal3fVertex3fSUN (nx flonum?) (ny flonum?) (nz flonum?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glNormal3fVertex3fSUN (nx single-flonum?) (ny single-flonum?) (nz single-flonum?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glNormal3fVertex3fvSUN (n f32vector?) (v f32vector?)) any]{
@@ -187,7 +187,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.tx
 @defproc[(glNormalStream3dvATI (stream exact-integer?) (coords f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.txt"]{@racket[GL_ATI_vertex_streams]}.
 }
-@defproc[(glNormalStream3fATI (stream exact-integer?) (nx flonum?) (ny flonum?) (nz flonum?)) any]{
+@defproc[(glNormalStream3fATI (stream exact-integer?) (nx single-flonum?) (ny single-flonum?) (nz single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.txt"]{@racket[GL_ATI_vertex_streams]}.
 }
 @defproc[(glNormalStream3fvATI (stream exact-integer?) (coords f32vector?)) any]{

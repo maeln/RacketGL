@@ -1,6 +1,6 @@
 #lang scribble/manual
 @title{glP...}
-@defproc[(glPNTrianglesfATI (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glPNTrianglesfATI (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/pn_triangles.txt"]{@racket[GL_ATI_pn_triangles]}.
 }
 @defproc[(glPNTrianglesiATI (pname exact-integer?) (param exact-integer?)) any]{
@@ -9,7 +9,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/pn_triangles.txt"
 @defproc[(glPassTexCoordATI (dst exact-nonnegative-integer?) (coord exact-nonnegative-integer?) (swizzle exact-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/fragment_shader.txt"]{@racket[GL_ATI_fragment_shader]}.
 }
-@defproc[(glPassThrough (token flonum?)) any]{
+@defproc[(glPassThrough (token single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glPassThrough.xml"]{glPassThrough manpage}.
@@ -42,13 +42,13 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt
 @defproc[(glPathFogGenNV (genMode exact-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
-@defproc[(glPathGlyphRangeNV (firstPathName exact-nonnegative-integer?) (fontTarget exact-integer?) (fontName gl-pointer?) (fontStyle exact-nonnegative-integer?) (firstGlyph exact-nonnegative-integer?) (numGlyphs exact-integer?) (handleMissingGlyphs exact-integer?) (pathParameterTemplate exact-nonnegative-integer?) (emScale flonum?)) any]{
+@defproc[(glPathGlyphRangeNV (firstPathName exact-nonnegative-integer?) (fontTarget exact-integer?) (fontName gl-pointer?) (fontStyle exact-nonnegative-integer?) (firstGlyph exact-nonnegative-integer?) (numGlyphs exact-integer?) (handleMissingGlyphs exact-integer?) (pathParameterTemplate exact-nonnegative-integer?) (emScale single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
-@defproc[(glPathGlyphsNV (firstPathName exact-nonnegative-integer?) (fontTarget exact-integer?) (fontName gl-pointer?) (fontStyle exact-nonnegative-integer?) (numGlyphs exact-integer?) (type exact-integer?) (charcodes gl-pointer?) (handleMissingGlyphs exact-integer?) (pathParameterTemplate exact-nonnegative-integer?) (emScale flonum?)) any]{
+@defproc[(glPathGlyphsNV (firstPathName exact-nonnegative-integer?) (fontTarget exact-integer?) (fontName gl-pointer?) (fontStyle exact-nonnegative-integer?) (numGlyphs exact-integer?) (type exact-integer?) (charcodes gl-pointer?) (handleMissingGlyphs exact-integer?) (pathParameterTemplate exact-nonnegative-integer?) (emScale single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
-@defproc[(glPathParameterfNV (path exact-nonnegative-integer?) (pname exact-integer?) (value flonum?)) any]{
+@defproc[(glPathParameterfNV (path exact-nonnegative-integer?) (pname exact-integer?) (value single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
 @defproc[(glPathParameterfvNV (path exact-nonnegative-integer?) (pname exact-integer?) (value f32vector?)) any]{
@@ -60,7 +60,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt
 @defproc[(glPathParameterivNV (path exact-nonnegative-integer?) (pname exact-integer?) (value s32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
-@defproc[(glPathStencilDepthOffsetNV (factor flonum?) (units flonum?)) any]{
+@defproc[(glPathStencilDepthOffsetNV (factor single-flonum?) (units single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
 @defproc[(glPathStencilFuncNV (func exact-integer?) (ref exact-integer?) (mask exact-nonnegative-integer?)) any]{
@@ -104,7 +104,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glPixelMap.xml"]{glPixelMap manpage}.
 }
-@defproc[(glPixelStoref (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glPixelStoref (pname exact-integer?) (param single-flonum?)) any]{
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glPixelStore.xml"]{glPixelStore manpage}.
 }
@@ -112,7 +112,7 @@ See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glPixelStore.xml"]
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glPixelStore.xml"]{glPixelStore manpage}.
 }
-@defproc[(glPixelTexGenParameterfSGIS (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glPixelTexGenParameterfSGIS (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIS/pixel_texture.txt"]{@racket[GL_SGIS_pixel_texture]}.
 }
 @defproc[(glPixelTexGenParameterfvSGIS (pname exact-integer?) (params f32vector?)) any]{
@@ -127,7 +127,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/SGIS/pixel_texture.tx
 @defproc[(glPixelTexGenSGIX (mode exact-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/pixel_texture.txt"]{@racket[GL_SGIX_pixel_texture]}.
 }
-@defproc[(glPixelTransferf (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glPixelTransferf (pname exact-integer?) (param single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glPixelTransfer.xml"]{glPixelTransfer manpage}.
@@ -137,10 +137,10 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glPixelTransfer.xml"]{glPixelTransfer manpage}.
 }
-@defproc[(glPixelTransformParameterfEXT (target exact-integer?) (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glPixelTransformParameterfEXT (target exact-integer?) (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/pixel_transform.txt"]{@racket[GL_EXT_pixel_transform]}.
 }
-@defproc[(glPixelTransformParameterfvEXT (target exact-integer?) (pname exact-integer?) (params flonum?)) any]{
+@defproc[(glPixelTransformParameterfvEXT (target exact-integer?) (pname exact-integer?) (params single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/pixel_transform.txt"]{@racket[GL_EXT_pixel_transform]}.
 }
 @defproc[(glPixelTransformParameteriEXT (target exact-integer?) (pname exact-integer?) (param exact-integer?)) any]{
@@ -149,30 +149,30 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/pixel_transform.t
 @defproc[(glPixelTransformParameterivEXT (target exact-integer?) (pname exact-integer?) (params exact-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/pixel_transform.txt"]{@racket[GL_EXT_pixel_transform]}.
 }
-@defproc[(glPixelZoom (xfactor flonum?) (yfactor flonum?)) any]{
+@defproc[(glPixelZoom (xfactor single-flonum?) (yfactor single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glPixelZoom.xml"]{glPixelZoom manpage}.
 }
-@defproc[(glPointAlongPathNV (path exact-nonnegative-integer?) (startSegment exact-integer?) (numSegments exact-integer?) (distance flonum?)) (values boolean? flonum? flonum? flonum? flonum?)]{
+@defproc[(glPointAlongPathNV (path exact-nonnegative-integer?) (startSegment exact-integer?) (numSegments exact-integer?) (distance single-flonum?)) (values boolean? single-flonum? single-flonum? single-flonum? single-flonum?)]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/path_rendering.txt"]{@racket[GL_NV_path_rendering]}.
 }
-@defproc[(glPointParameterf (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glPointParameterf (pname exact-integer?) (param single-flonum?)) any]{
 Version 1.4.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glPointParameter.xml"]{glPointParameter manpage}.
 }
-@defproc[(glPointParameterfARB (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glPointParameterfARB (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/point_parameters.txt"]{@racket[GL_ARB_point_parameters]}.
 
 Alias of @racket[glPointParameterf].
 }
-@defproc[(glPointParameterfEXT (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glPointParameterfEXT (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/point_parameters.txt"]{@racket[GL_EXT_point_parameters]}.
 
 Alias of @racket[glPointParameterfARB].
 }
-@defproc[(glPointParameterfSGIS (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glPointParameterfSGIS (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIS/point_parameters.txt"]{@racket[GL_SGIS_point_parameters]}.
 
 Alias of @racket[glPointParameterfARB].
@@ -182,7 +182,7 @@ Version 1.4.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glPointParameter.xml"]{glPointParameter manpage}.
 }
-@defproc[(glPointParameterfvARB (pname exact-integer?) (params flonum?)) any]{
+@defproc[(glPointParameterfvARB (pname exact-integer?) (params single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/point_parameters.txt"]{@racket[GL_ARB_point_parameters]}.
 
 Alias of @racket[glPointParameterfv].
@@ -217,7 +217,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/point_sprite.txt"]
 
 Alias of @racket[glPointParameteriv].
 }
-@defproc[(glPointSize (size flonum?)) any]{
+@defproc[(glPointSize (size single-flonum?)) any]{
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glPointSize.xml"]{glPointSize manpage}.
 }
@@ -231,12 +231,12 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/instruments.txt"
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glPolygonMode.xml"]{glPolygonMode manpage}.
 }
-@defproc[(glPolygonOffset (factor flonum?) (units flonum?)) any]{
+@defproc[(glPolygonOffset (factor single-flonum?) (units single-flonum?)) any]{
 Version 1.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glPolygonOffset.xml"]{glPolygonOffset manpage}.
 }
-@defproc[(glPolygonOffsetEXT (factor flonum?) (bias flonum?)) any]{
+@defproc[(glPolygonOffsetEXT (factor single-flonum?) (bias single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/polygon_offset.txt"]{@racket[GL_EXT_polygon_offset]}.
 }
 @defproc[(glPolygonStipple (mask (or/c string? bytes?))) any]{
@@ -316,7 +316,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_program.tx
 @defproc[(glProgramEnvParameter4dvARB (target exact-integer?) (index exact-nonnegative-integer?) (params f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_program.txt"]{@racket[GL_ARB_vertex_program]}.
 }
-@defproc[(glProgramEnvParameter4fARB (target exact-integer?) (index exact-nonnegative-integer?) (x flonum?) (y flonum?) (z flonum?) (w flonum?)) any]{
+@defproc[(glProgramEnvParameter4fARB (target exact-integer?) (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?) (w single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_program.txt"]{@racket[GL_ARB_vertex_program]}.
 }
 @defproc[(glProgramEnvParameter4fvARB (target exact-integer?) (index exact-nonnegative-integer?) (params f32vector?)) any]{
@@ -349,7 +349,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_program.tx
 @defproc[(glProgramLocalParameter4dvARB (target exact-integer?) (index exact-nonnegative-integer?) (params f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_program.txt"]{@racket[GL_ARB_vertex_program]}.
 }
-@defproc[(glProgramLocalParameter4fARB (target exact-integer?) (index exact-nonnegative-integer?) (x flonum?) (y flonum?) (z flonum?) (w flonum?)) any]{
+@defproc[(glProgramLocalParameter4fARB (target exact-integer?) (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?) (w single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_program.txt"]{@racket[GL_ARB_vertex_program]}.
 }
 @defproc[(glProgramLocalParameter4fvARB (target exact-integer?) (index exact-nonnegative-integer?) (params f32vector?)) any]{
@@ -382,7 +382,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/fragment_program.t
 @defproc[(glProgramNamedParameter4dvNV (id exact-nonnegative-integer?) (len exact-integer?) (name (or/c string? bytes?)) (v f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/fragment_program.txt"]{@racket[GL_NV_fragment_program]}.
 }
-@defproc[(glProgramNamedParameter4fNV (id exact-nonnegative-integer?) (len exact-integer?) (name (or/c string? bytes?)) (x flonum?) (y flonum?) (z flonum?) (w flonum?)) any]{
+@defproc[(glProgramNamedParameter4fNV (id exact-nonnegative-integer?) (len exact-integer?) (name (or/c string? bytes?)) (x single-flonum?) (y single-flonum?) (z single-flonum?) (w single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/fragment_program.txt"]{@racket[GL_NV_fragment_program]}.
 }
 @defproc[(glProgramNamedParameter4fvNV (id exact-nonnegative-integer?) (len exact-integer?) (name (or/c string? bytes?)) (v f32vector?)) any]{
@@ -394,7 +394,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt
 @defproc[(glProgramParameter4dvNV (target exact-integer?) (index exact-nonnegative-integer?) (v f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt"]{@racket[GL_NV_vertex_program]}.
 }
-@defproc[(glProgramParameter4fNV (target exact-integer?) (index exact-nonnegative-integer?) (x flonum?) (y flonum?) (z flonum?) (w flonum?)) any]{
+@defproc[(glProgramParameter4fNV (target exact-integer?) (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?) (w single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt"]{@racket[GL_NV_vertex_program]}.
 }
 @defproc[(glProgramParameter4fvNV (target exact-integer?) (index exact-nonnegative-integer?) (v f32vector?)) any]{
@@ -443,12 +443,12 @@ See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glProgramUniform.x
 @defproc[(glProgramUniform1dvEXT (program exact-nonnegative-integer?) (location exact-integer?) (count exact-integer?) (value f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
-@defproc[(glProgramUniform1f (program exact-nonnegative-integer?) (location exact-integer?) (v0 flonum?)) any]{
+@defproc[(glProgramUniform1f (program exact-nonnegative-integer?) (location exact-integer?) (v0 single-flonum?)) any]{
 Version 4.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glProgramUniform.xml"]{glProgramUniform manpage}.
 }
-@defproc[(glProgramUniform1fEXT (program exact-nonnegative-integer?) (location exact-integer?) (v0 flonum?)) any]{
+@defproc[(glProgramUniform1fEXT (program exact-nonnegative-integer?) (location exact-integer?) (v0 single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
 @defproc[(glProgramUniform1fv (program exact-nonnegative-integer?) (location exact-integer?) (count exact-integer?) (value f32vector?)) any]{
@@ -519,12 +519,12 @@ See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glProgramUniform.x
 @defproc[(glProgramUniform2dvEXT (program exact-nonnegative-integer?) (location exact-integer?) (count exact-integer?) (value f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
-@defproc[(glProgramUniform2f (program exact-nonnegative-integer?) (location exact-integer?) (v0 flonum?) (v1 flonum?)) any]{
+@defproc[(glProgramUniform2f (program exact-nonnegative-integer?) (location exact-integer?) (v0 single-flonum?) (v1 single-flonum?)) any]{
 Version 4.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glProgramUniform.xml"]{glProgramUniform manpage}.
 }
-@defproc[(glProgramUniform2fEXT (program exact-nonnegative-integer?) (location exact-integer?) (v0 flonum?) (v1 flonum?)) any]{
+@defproc[(glProgramUniform2fEXT (program exact-nonnegative-integer?) (location exact-integer?) (v0 single-flonum?) (v1 single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
 @defproc[(glProgramUniform2fv (program exact-nonnegative-integer?) (location exact-integer?) (count exact-integer?) (value f32vector?)) any]{
@@ -595,12 +595,12 @@ See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glProgramUniform.x
 @defproc[(glProgramUniform3dvEXT (program exact-nonnegative-integer?) (location exact-integer?) (count exact-integer?) (value f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
-@defproc[(glProgramUniform3f (program exact-nonnegative-integer?) (location exact-integer?) (v0 flonum?) (v1 flonum?) (v2 flonum?)) any]{
+@defproc[(glProgramUniform3f (program exact-nonnegative-integer?) (location exact-integer?) (v0 single-flonum?) (v1 single-flonum?) (v2 single-flonum?)) any]{
 Version 4.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glProgramUniform.xml"]{glProgramUniform manpage}.
 }
-@defproc[(glProgramUniform3fEXT (program exact-nonnegative-integer?) (location exact-integer?) (v0 flonum?) (v1 flonum?) (v2 flonum?)) any]{
+@defproc[(glProgramUniform3fEXT (program exact-nonnegative-integer?) (location exact-integer?) (v0 single-flonum?) (v1 single-flonum?) (v2 single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
 @defproc[(glProgramUniform3fv (program exact-nonnegative-integer?) (location exact-integer?) (count exact-integer?) (value f32vector?)) any]{
@@ -671,12 +671,12 @@ See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glProgramUniform.x
 @defproc[(glProgramUniform4dvEXT (program exact-nonnegative-integer?) (location exact-integer?) (count exact-integer?) (value f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
-@defproc[(glProgramUniform4f (program exact-nonnegative-integer?) (location exact-integer?) (v0 flonum?) (v1 flonum?) (v2 flonum?) (v3 flonum?)) any]{
+@defproc[(glProgramUniform4f (program exact-nonnegative-integer?) (location exact-integer?) (v0 single-flonum?) (v1 single-flonum?) (v2 single-flonum?) (v3 single-flonum?)) any]{
 Version 4.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glProgramUniform.xml"]{glProgramUniform manpage}.
 }
-@defproc[(glProgramUniform4fEXT (program exact-nonnegative-integer?) (location exact-integer?) (v0 flonum?) (v1 flonum?) (v2 flonum?) (v3 flonum?)) any]{
+@defproc[(glProgramUniform4fEXT (program exact-nonnegative-integer?) (location exact-integer?) (v0 single-flonum?) (v1 single-flonum?) (v2 single-flonum?) (v3 single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
 @defproc[(glProgramUniform4fv (program exact-nonnegative-integer?) (location exact-integer?) (count exact-integer?) (value f32vector?)) any]{

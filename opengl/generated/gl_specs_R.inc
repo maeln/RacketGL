@@ -10,7 +10,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glRasterPos.xml"]{glRasterPos manpage}.
 }
-@defproc[(glRasterPos2f (x flonum?) (y flonum?)) any]{
+@defproc[(glRasterPos2f (x single-flonum?) (y single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glRasterPos.xml"]{glRasterPos manpage}.
@@ -50,7 +50,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glRasterPos.xml"]{glRasterPos manpage}.
 }
-@defproc[(glRasterPos3f (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glRasterPos3f (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glRasterPos.xml"]{glRasterPos manpage}.
@@ -90,7 +90,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glRasterPos.xml"]{glRasterPos manpage}.
 }
-@defproc[(glRasterPos4f (x flonum?) (y flonum?) (z flonum?) (w flonum?)) any]{
+@defproc[(glRasterPos4f (x single-flonum?) (y single-flonum?) (z single-flonum?) (w single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glRasterPos.xml"]{glRasterPos manpage}.
@@ -144,7 +144,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glRect.xml"]{glRect manpage}.
 }
-@defproc[(glRectf (x1 flonum?) (y1 flonum?) (x2 flonum?) (y2 flonum?)) any]{
+@defproc[(glRectf (x1 single-flonum?) (y1 single-flonum?) (x2 single-flonum?) (y2 single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glRect.xml"]{glRect manpage}.
@@ -219,25 +219,25 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/triangle_list.txt
 @defproc[(glReplacementCodeubvSUN (code (integer-in 0 255))) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/triangle_list.txt"]{@racket[GL_SUN_triangle_list]}.
 }
-@defproc[(glReplacementCodeuiColor3fVertex3fSUN (rc exact-nonnegative-integer?) (r flonum?) (g flonum?) (b flonum?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glReplacementCodeuiColor3fVertex3fSUN (rc exact-nonnegative-integer?) (r single-flonum?) (g single-flonum?) (b single-flonum?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glReplacementCodeuiColor3fVertex3fvSUN (rc exact-nonnegative-integer?) (c f32vector?) (v f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
-@defproc[(glReplacementCodeuiColor4fNormal3fVertex3fSUN (rc exact-nonnegative-integer?) (r flonum?) (g flonum?) (b flonum?) (a flonum?) (nx flonum?) (ny flonum?) (nz flonum?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glReplacementCodeuiColor4fNormal3fVertex3fSUN (rc exact-nonnegative-integer?) (r single-flonum?) (g single-flonum?) (b single-flonum?) (a single-flonum?) (nx single-flonum?) (ny single-flonum?) (nz single-flonum?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glReplacementCodeuiColor4fNormal3fVertex3fvSUN (rc exact-nonnegative-integer?) (c f32vector?) (n f32vector?) (v f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
-@defproc[(glReplacementCodeuiColor4ubVertex3fSUN (rc exact-nonnegative-integer?) (r (integer-in 0 255)) (g (integer-in 0 255)) (b (integer-in 0 255)) (a (integer-in 0 255)) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glReplacementCodeuiColor4ubVertex3fSUN (rc exact-nonnegative-integer?) (r (integer-in 0 255)) (g (integer-in 0 255)) (b (integer-in 0 255)) (a (integer-in 0 255)) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glReplacementCodeuiColor4ubVertex3fvSUN (rc exact-nonnegative-integer?) (c (or/c string? bytes?)) (v f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
-@defproc[(glReplacementCodeuiNormal3fVertex3fSUN (rc exact-nonnegative-integer?) (nx flonum?) (ny flonum?) (nz flonum?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glReplacementCodeuiNormal3fVertex3fSUN (rc exact-nonnegative-integer?) (nx single-flonum?) (ny single-flonum?) (nz single-flonum?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glReplacementCodeuiNormal3fVertex3fvSUN (rc exact-nonnegative-integer?) (n f32vector?) (v f32vector?)) any]{
@@ -246,25 +246,25 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@rac
 @defproc[(glReplacementCodeuiSUN (code exact-nonnegative-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/triangle_list.txt"]{@racket[GL_SUN_triangle_list]}.
 }
-@defproc[(glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN (rc exact-nonnegative-integer?) (s flonum?) (t flonum?) (r flonum?) (g flonum?) (b flonum?) (a flonum?) (nx flonum?) (ny flonum?) (nz flonum?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN (rc exact-nonnegative-integer?) (s single-flonum?) (t single-flonum?) (r single-flonum?) (g single-flonum?) (b single-flonum?) (a single-flonum?) (nx single-flonum?) (ny single-flonum?) (nz single-flonum?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN (rc exact-nonnegative-integer?) (tc f32vector?) (c f32vector?) (n f32vector?) (v f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
-@defproc[(glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN (rc exact-nonnegative-integer?) (s flonum?) (t flonum?) (nx flonum?) (ny flonum?) (nz flonum?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN (rc exact-nonnegative-integer?) (s single-flonum?) (t single-flonum?) (nx single-flonum?) (ny single-flonum?) (nz single-flonum?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN (rc exact-nonnegative-integer?) (tc f32vector?) (n f32vector?) (v f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
-@defproc[(glReplacementCodeuiTexCoord2fVertex3fSUN (rc exact-nonnegative-integer?) (s flonum?) (t flonum?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glReplacementCodeuiTexCoord2fVertex3fSUN (rc exact-nonnegative-integer?) (s single-flonum?) (t single-flonum?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glReplacementCodeuiTexCoord2fVertex3fvSUN (rc exact-nonnegative-integer?) (tc f32vector?) (v f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
-@defproc[(glReplacementCodeuiVertex3fSUN (rc exact-nonnegative-integer?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glReplacementCodeuiVertex3fSUN (rc exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SUN/vertex.txt"]{@racket[GL_SUN_vertex]}.
 }
 @defproc[(glReplacementCodeuiVertex3fvSUN (rc exact-nonnegative-integer?) (v f32vector?)) any]{
@@ -320,7 +320,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glRotate.xml"]{glRotate manpage}.
 }
-@defproc[(glRotatef (angle flonum?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glRotatef (angle single-flonum?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glRotate.xml"]{glRotate manpage}.

@@ -10,12 +10,12 @@ Version 1.2.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glUniform.xml"]{glUniform manpage}.
 }
-@defproc[(glUniform1f (location exact-integer?) (v0 flonum?)) any]{
+@defproc[(glUniform1f (location exact-integer?) (v0 single-flonum?)) any]{
 Version 2.0.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glUniform.xml"]{glUniform manpage}.
 }
-@defproc[(glUniform1fARB (location exact-integer?) (v0 flonum?)) any]{
+@defproc[(glUniform1fARB (location exact-integer?) (v0 single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/shader_objects.txt"]{@racket[GL_ARB_shader_objects]}.
 
 Alias of @racket[glUniform1f].
@@ -92,12 +92,12 @@ Version 1.2.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glUniform.xml"]{glUniform manpage}.
 }
-@defproc[(glUniform2f (location exact-integer?) (v0 flonum?) (v1 flonum?)) any]{
+@defproc[(glUniform2f (location exact-integer?) (v0 single-flonum?) (v1 single-flonum?)) any]{
 Version 2.0.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glUniform.xml"]{glUniform manpage}.
 }
-@defproc[(glUniform2fARB (location exact-integer?) (v0 flonum?) (v1 flonum?)) any]{
+@defproc[(glUniform2fARB (location exact-integer?) (v0 single-flonum?) (v1 single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/shader_objects.txt"]{@racket[GL_ARB_shader_objects]}.
 
 Alias of @racket[glUniform2f].
@@ -174,12 +174,12 @@ Version 1.2.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glUniform.xml"]{glUniform manpage}.
 }
-@defproc[(glUniform3f (location exact-integer?) (v0 flonum?) (v1 flonum?) (v2 flonum?)) any]{
+@defproc[(glUniform3f (location exact-integer?) (v0 single-flonum?) (v1 single-flonum?) (v2 single-flonum?)) any]{
 Version 2.0.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glUniform.xml"]{glUniform manpage}.
 }
-@defproc[(glUniform3fARB (location exact-integer?) (v0 flonum?) (v1 flonum?) (v2 flonum?)) any]{
+@defproc[(glUniform3fARB (location exact-integer?) (v0 single-flonum?) (v1 single-flonum?) (v2 single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/shader_objects.txt"]{@racket[GL_ARB_shader_objects]}.
 
 Alias of @racket[glUniform3f].
@@ -256,12 +256,12 @@ Version 1.2.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glUniform.xml"]{glUniform manpage}.
 }
-@defproc[(glUniform4f (location exact-integer?) (v0 flonum?) (v1 flonum?) (v2 flonum?) (v3 flonum?)) any]{
+@defproc[(glUniform4f (location exact-integer?) (v0 single-flonum?) (v1 single-flonum?) (v2 single-flonum?) (v3 single-flonum?)) any]{
 Version 2.0.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glUniform.xml"]{glUniform manpage}.
 }
-@defproc[(glUniform4fARB (location exact-integer?) (v0 flonum?) (v1 flonum?) (v2 flonum?) (v3 flonum?)) any]{
+@defproc[(glUniform4fARB (location exact-integer?) (v0 single-flonum?) (v1 single-flonum?) (v2 single-flonum?) (v3 single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/shader_objects.txt"]{@racket[GL_ARB_shader_objects]}.
 
 Alias of @racket[glUniform4f].

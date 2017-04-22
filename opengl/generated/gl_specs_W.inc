@@ -67,18 +67,18 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/MESA/window_pos.txt"]
 
 Alias of @racket[glWindowPos2dvARB].
 }
-@defproc[(glWindowPos2f (x flonum?) (y flonum?)) any]{
+@defproc[(glWindowPos2f (x single-flonum?) (y single-flonum?)) any]{
 Version 1.4.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glWindowPos.xml"]{glWindowPos manpage}.
 }
-@defproc[(glWindowPos2fARB (x flonum?) (y flonum?)) any]{
+@defproc[(glWindowPos2fARB (x single-flonum?) (y single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/window_pos.txt"]{@racket[GL_ARB_window_pos]}.
 
 Alias of @racket[glWindowPos2f].
 }
-@defproc[(glWindowPos2fMESA (x flonum?) (y flonum?)) any]{
+@defproc[(glWindowPos2fMESA (x single-flonum?) (y single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/MESA/window_pos.txt"]{@racket[GL_MESA_window_pos]}.
 
 Alias of @racket[glWindowPos2fARB].
@@ -195,18 +195,18 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/MESA/window_pos.txt"]
 
 Alias of @racket[glWindowPos3dvARB].
 }
-@defproc[(glWindowPos3f (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glWindowPos3f (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Version 1.4.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glWindowPos.xml"]{glWindowPos manpage}.
 }
-@defproc[(glWindowPos3fARB (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glWindowPos3fARB (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/window_pos.txt"]{@racket[GL_ARB_window_pos]}.
 
 Alias of @racket[glWindowPos3f].
 }
-@defproc[(glWindowPos3fMESA (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glWindowPos3fMESA (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/MESA/window_pos.txt"]{@racket[GL_MESA_window_pos]}.
 
 Alias of @racket[glWindowPos3fARB].
@@ -297,7 +297,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/MESA/window_pos.txt"]
 @defproc[(glWindowPos4dvMESA (v f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/MESA/window_pos.txt"]{@racket[GL_MESA_window_pos]}.
 }
-@defproc[(glWindowPos4fMESA (x flonum?) (y flonum?) (z flonum?) (w flonum?)) any]{
+@defproc[(glWindowPos4fMESA (x single-flonum?) (y single-flonum?) (z single-flonum?) (w single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/MESA/window_pos.txt"]{@racket[GL_MESA_window_pos]}.
 }
 @defproc[(glWindowPos4fvMESA (v f32vector?)) any]{

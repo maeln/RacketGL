@@ -3,7 +3,7 @@
 @defproc[(glLightEnviSGIX (pname exact-integer?) (param exact-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/fragment_lighting.txt"]{@racket[GL_SGIX_fragment_lighting]}.
 }
-@defproc[(glLightModelf (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glLightModelf (pname exact-integer?) (param single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glLightModel.xml"]{glLightModel manpage}.
@@ -23,7 +23,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glLightModel.xml"]{glLightModel manpage}.
 }
-@defproc[(glLightf (light exact-integer?) (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glLightf (light exact-integer?) (pname exact-integer?) (param single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glLight.xml"]{glLight manpage}.
@@ -48,7 +48,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glLineStipple.xml"]{glLineStipple manpage}.
 }
-@defproc[(glLineWidth (width flonum?)) any]{
+@defproc[(glLineWidth (width single-flonum?)) any]{
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glLineWidth.xml"]{glLineWidth manpage}.
 }
@@ -67,7 +67,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glListBase.xml"]{glListBase manpage}.
 }
-@defproc[(glListParameterfSGIX (list exact-nonnegative-integer?) (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glListParameterfSGIX (list exact-nonnegative-integer?) (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/SGIX/list_priority.txt"]{@racket[GL_SGIX_list_priority]}.
 }
 @defproc[(glListParameterfvSGIX (list exact-nonnegative-integer?) (pname exact-integer?) (params f32vector?)) any]{

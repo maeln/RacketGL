@@ -143,12 +143,12 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glEvalCoord.xml"]{glEvalCoord manpage}.
 }
-@defproc[(glEvalCoord1f (u flonum?)) any]{
+@defproc[(glEvalCoord1f (u single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glEvalCoord.xml"]{glEvalCoord manpage}.
 }
-@defproc[(glEvalCoord1fv (u flonum?)) any]{
+@defproc[(glEvalCoord1fv (u single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glEvalCoord.xml"]{glEvalCoord manpage}.
@@ -163,7 +163,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glEvalCoord.xml"]{glEvalCoord manpage}.
 }
-@defproc[(glEvalCoord2f (u flonum?) (v flonum?)) any]{
+@defproc[(glEvalCoord2f (u single-flonum?) (v single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glEvalCoord.xml"]{glEvalCoord manpage}.

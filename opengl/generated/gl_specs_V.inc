@@ -61,7 +61,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glVertex.xml"]{glVertex manpage}.
 }
-@defproc[(glVertex2f (x flonum?) (y flonum?)) any]{
+@defproc[(glVertex2f (x single-flonum?) (y single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glVertex.xml"]{glVertex manpage}.
@@ -107,7 +107,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glVertex.xml"]{glVertex manpage}.
 }
-@defproc[(glVertex3f (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glVertex3f (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glVertex.xml"]{glVertex manpage}.
@@ -153,7 +153,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glVertex.xml"]{glVertex manpage}.
 }
-@defproc[(glVertex4f (x flonum?) (y flonum?) (z flonum?) (w flonum?)) any]{
+@defproc[(glVertex4f (x single-flonum?) (y single-flonum?) (z single-flonum?) (w single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glVertex.xml"]{glVertex manpage}.
@@ -251,34 +251,34 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt
 
 Alias of @racket[glVertexAttrib1dv].
 }
-@defproc[(glVertexAttrib1f (index exact-nonnegative-integer?) (x flonum?)) any]{
+@defproc[(glVertexAttrib1f (index exact-nonnegative-integer?) (x single-flonum?)) any]{
 Version 2.0.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glVertexAttrib.xml"]{glVertexAttrib manpage}.
 }
-@defproc[(glVertexAttrib1fARB (index exact-nonnegative-integer?) (x flonum?)) any]{
+@defproc[(glVertexAttrib1fARB (index exact-nonnegative-integer?) (x single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_program.txt"]{@racket[GL_ARB_vertex_program]}.
 
 Alias of @racket[glVertexAttrib1f].
 }
-@defproc[(glVertexAttrib1fNV (index exact-nonnegative-integer?) (x flonum?)) any]{
+@defproc[(glVertexAttrib1fNV (index exact-nonnegative-integer?) (x single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt"]{@racket[GL_NV_vertex_program]}.
 
 Alias of @racket[glVertexAttrib1f].
 }
-@defproc[(glVertexAttrib1fv (index exact-nonnegative-integer?) (v flonum?)) any]{
+@defproc[(glVertexAttrib1fv (index exact-nonnegative-integer?) (v single-flonum?)) any]{
 Version 2.0.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glVertexAttrib.xml"]{glVertexAttrib manpage}.
 }
-@defproc[(glVertexAttrib1fvARB (index exact-nonnegative-integer?) (v flonum?)) any]{
+@defproc[(glVertexAttrib1fvARB (index exact-nonnegative-integer?) (v single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_program.txt"]{@racket[GL_ARB_vertex_program]}.
 
 Alias of @racket[glVertexAttrib1fv].
 }
-@defproc[(glVertexAttrib1fvNV (index exact-nonnegative-integer?) (v flonum?)) any]{
+@defproc[(glVertexAttrib1fvNV (index exact-nonnegative-integer?) (v single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt"]{@racket[GL_NV_vertex_program]}.
 
 Alias of @racket[glVertexAttrib1fv].
@@ -353,18 +353,18 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt
 
 Alias of @racket[glVertexAttrib2dv].
 }
-@defproc[(glVertexAttrib2f (index exact-nonnegative-integer?) (x flonum?) (y flonum?)) any]{
+@defproc[(glVertexAttrib2f (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?)) any]{
 Version 2.0.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glVertexAttrib.xml"]{glVertexAttrib manpage}.
 }
-@defproc[(glVertexAttrib2fARB (index exact-nonnegative-integer?) (x flonum?) (y flonum?)) any]{
+@defproc[(glVertexAttrib2fARB (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_program.txt"]{@racket[GL_ARB_vertex_program]}.
 
 Alias of @racket[glVertexAttrib2f].
 }
-@defproc[(glVertexAttrib2fNV (index exact-nonnegative-integer?) (x flonum?) (y flonum?)) any]{
+@defproc[(glVertexAttrib2fNV (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt"]{@racket[GL_NV_vertex_program]}.
 
 Alias of @racket[glVertexAttrib2f].
@@ -455,18 +455,18 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt
 
 Alias of @racket[glVertexAttrib3dv].
 }
-@defproc[(glVertexAttrib3f (index exact-nonnegative-integer?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glVertexAttrib3f (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Version 2.0.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glVertexAttrib.xml"]{glVertexAttrib manpage}.
 }
-@defproc[(glVertexAttrib3fARB (index exact-nonnegative-integer?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glVertexAttrib3fARB (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_program.txt"]{@racket[GL_ARB_vertex_program]}.
 
 Alias of @racket[glVertexAttrib3f].
 }
-@defproc[(glVertexAttrib3fNV (index exact-nonnegative-integer?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glVertexAttrib3fNV (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt"]{@racket[GL_NV_vertex_program]}.
 
 Alias of @racket[glVertexAttrib3f].
@@ -631,18 +631,18 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt
 
 Alias of @racket[glVertexAttrib4dv].
 }
-@defproc[(glVertexAttrib4f (index exact-nonnegative-integer?) (x flonum?) (y flonum?) (z flonum?) (w flonum?)) any]{
+@defproc[(glVertexAttrib4f (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?) (w single-flonum?)) any]{
 Version 2.0.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glVertexAttrib.xml"]{glVertexAttrib manpage}.
 }
-@defproc[(glVertexAttrib4fARB (index exact-nonnegative-integer?) (x flonum?) (y flonum?) (z flonum?) (w flonum?)) any]{
+@defproc[(glVertexAttrib4fARB (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?) (w single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_program.txt"]{@racket[GL_ARB_vertex_program]}.
 
 Alias of @racket[glVertexAttrib4f].
 }
-@defproc[(glVertexAttrib4fNV (index exact-nonnegative-integer?) (x flonum?) (y flonum?) (z flonum?) (w flonum?)) any]{
+@defproc[(glVertexAttrib4fNV (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?) (w single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/NV/vertex_program.txt"]{@racket[GL_NV_vertex_program]}.
 
 Alias of @racket[glVertexAttrib4f].
@@ -1171,7 +1171,7 @@ Version 4.3.
 @defproc[(glVertexBlendARB (count exact-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/vertex_blend.txt"]{@racket[GL_ARB_vertex_blend]}.
 }
-@defproc[(glVertexBlendEnvfATI (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glVertexBlendEnvfATI (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.txt"]{@racket[GL_ATI_vertex_streams]}.
 }
 @defproc[(glVertexBlendEnviATI (pname exact-integer?) (param exact-integer?)) any]{
@@ -1219,10 +1219,10 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.tx
 @defproc[(glVertexStream1dvATI (stream exact-integer?) (coords real?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.txt"]{@racket[GL_ATI_vertex_streams]}.
 }
-@defproc[(glVertexStream1fATI (stream exact-integer?) (x flonum?)) any]{
+@defproc[(glVertexStream1fATI (stream exact-integer?) (x single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.txt"]{@racket[GL_ATI_vertex_streams]}.
 }
-@defproc[(glVertexStream1fvATI (stream exact-integer?) (coords flonum?)) any]{
+@defproc[(glVertexStream1fvATI (stream exact-integer?) (coords single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.txt"]{@racket[GL_ATI_vertex_streams]}.
 }
 @defproc[(glVertexStream1iATI (stream exact-integer?) (x exact-integer?)) any]{
@@ -1243,7 +1243,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.tx
 @defproc[(glVertexStream2dvATI (stream exact-integer?) (coords f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.txt"]{@racket[GL_ATI_vertex_streams]}.
 }
-@defproc[(glVertexStream2fATI (stream exact-integer?) (x flonum?) (y flonum?)) any]{
+@defproc[(glVertexStream2fATI (stream exact-integer?) (x single-flonum?) (y single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.txt"]{@racket[GL_ATI_vertex_streams]}.
 }
 @defproc[(glVertexStream2fvATI (stream exact-integer?) (coords f32vector?)) any]{
@@ -1267,7 +1267,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.tx
 @defproc[(glVertexStream3dvATI (stream exact-integer?) (coords f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.txt"]{@racket[GL_ATI_vertex_streams]}.
 }
-@defproc[(glVertexStream3fATI (stream exact-integer?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glVertexStream3fATI (stream exact-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.txt"]{@racket[GL_ATI_vertex_streams]}.
 }
 @defproc[(glVertexStream3fvATI (stream exact-integer?) (coords f32vector?)) any]{
@@ -1291,7 +1291,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.tx
 @defproc[(glVertexStream4dvATI (stream exact-integer?) (coords f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.txt"]{@racket[GL_ATI_vertex_streams]}.
 }
-@defproc[(glVertexStream4fATI (stream exact-integer?) (x flonum?) (y flonum?) (z flonum?) (w flonum?)) any]{
+@defproc[(glVertexStream4fATI (stream exact-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?) (w single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.txt"]{@racket[GL_ATI_vertex_streams]}.
 }
 @defproc[(glVertexStream4fvATI (stream exact-integer?) (coords f32vector?)) any]{
@@ -1312,10 +1312,10 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ATI/vertex_streams.tx
 @defproc[(glVertexWeightPointerEXT (size exact-integer?) (type exact-integer?) (stride exact-integer?) (pointer gl-pointer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/vertex_weighting.txt"]{@racket[GL_EXT_vertex_weighting]}.
 }
-@defproc[(glVertexWeightfEXT (weight flonum?)) any]{
+@defproc[(glVertexWeightfEXT (weight single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/vertex_weighting.txt"]{@racket[GL_EXT_vertex_weighting]}.
 }
-@defproc[(glVertexWeightfvEXT (weight flonum?)) any]{
+@defproc[(glVertexWeightfvEXT (weight single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/vertex_weighting.txt"]{@racket[GL_EXT_vertex_weighting]}.
 }
 @defproc[(glVertexWeighthNV (weight (integer-in 0 65535))) any]{
@@ -1343,7 +1343,7 @@ See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glViewport.xml"]{g
 @defproc[(glViewportArrayv (first exact-nonnegative-integer?) (count exact-integer?) (v f32vector?)) any]{
 Version 4.1.
 }
-@defproc[(glViewportIndexedf (index exact-nonnegative-integer?) (x flonum?) (y flonum?) (w flonum?) (h flonum?)) any]{
+@defproc[(glViewportIndexedf (index exact-nonnegative-integer?) (x single-flonum?) (y single-flonum?) (w single-flonum?) (h single-flonum?)) any]{
 Version 4.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glViewportIndexed.xml"]{glViewportIndexed manpage}.

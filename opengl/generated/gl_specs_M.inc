@@ -27,13 +27,13 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/bindless_texture.t
 @defproc[(glMap1d (target exact-integer?) (u1 real?) (u2 real?) (stride exact-integer?) (order exact-integer?) (points f64vector?)) any]{
 Deprecated in version 3.1.
 }
-@defproc[(glMap1f (target exact-integer?) (u1 flonum?) (u2 flonum?) (stride exact-integer?) (order exact-integer?) (points f32vector?)) any]{
+@defproc[(glMap1f (target exact-integer?) (u1 single-flonum?) (u2 single-flonum?) (stride exact-integer?) (order exact-integer?) (points f32vector?)) any]{
 Deprecated in version 3.1.
 }
 @defproc[(glMap2d (target exact-integer?) (u1 real?) (u2 real?) (ustride exact-integer?) (uorder exact-integer?) (v1 real?) (v2 real?) (vstride exact-integer?) (vorder exact-integer?) (points f64vector?)) any]{
 Deprecated in version 3.1.
 }
-@defproc[(glMap2f (target exact-integer?) (u1 flonum?) (u2 flonum?) (ustride exact-integer?) (uorder exact-integer?) (v1 flonum?) (v2 flonum?) (vstride exact-integer?) (vorder exact-integer?) (points f32vector?)) any]{
+@defproc[(glMap2f (target exact-integer?) (u1 single-flonum?) (u2 single-flonum?) (ustride exact-integer?) (uorder exact-integer?) (v1 single-flonum?) (v2 single-flonum?) (vstride exact-integer?) (vorder exact-integer?) (points f32vector?)) any]{
 Deprecated in version 3.1.
 }
 @defproc[(glMapBuffer (target exact-integer?) (access exact-integer?)) gl-pointer?]{
@@ -59,7 +59,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glMapGrid.xml"]{glMapGrid manpage}.
 }
-@defproc[(glMapGrid1f (un exact-integer?) (u1 flonum?) (u2 flonum?)) any]{
+@defproc[(glMapGrid1f (un exact-integer?) (u1 single-flonum?) (u2 single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glMapGrid.xml"]{glMapGrid manpage}.
@@ -69,7 +69,7 @@ Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glMapGrid.xml"]{glMapGrid manpage}.
 }
-@defproc[(glMapGrid2f (un exact-integer?) (u1 flonum?) (u2 flonum?) (vn exact-integer?) (v1 flonum?) (v2 flonum?)) any]{
+@defproc[(glMapGrid2f (un exact-integer?) (u1 single-flonum?) (u2 single-flonum?) (vn exact-integer?) (v1 single-flonum?) (v2 single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glMapGrid.xml"]{glMapGrid manpage}.
@@ -92,16 +92,16 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/NV/evaluators.txt"]{@
 @defproc[(glMapVertexAttrib1dAPPLE (index exact-nonnegative-integer?) (size exact-nonnegative-integer?) (u1 real?) (u2 real?) (stride exact-integer?) (order exact-integer?) (points f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/APPLE/vertex_program_evaluators.txt"]{@racket[GL_APPLE_vertex_program_evaluators]}.
 }
-@defproc[(glMapVertexAttrib1fAPPLE (index exact-nonnegative-integer?) (size exact-nonnegative-integer?) (u1 flonum?) (u2 flonum?) (stride exact-integer?) (order exact-integer?) (points f32vector?)) any]{
+@defproc[(glMapVertexAttrib1fAPPLE (index exact-nonnegative-integer?) (size exact-nonnegative-integer?) (u1 single-flonum?) (u2 single-flonum?) (stride exact-integer?) (order exact-integer?) (points f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/APPLE/vertex_program_evaluators.txt"]{@racket[GL_APPLE_vertex_program_evaluators]}.
 }
 @defproc[(glMapVertexAttrib2dAPPLE (index exact-nonnegative-integer?) (size exact-nonnegative-integer?) (u1 real?) (u2 real?) (ustride exact-integer?) (uorder exact-integer?) (v1 real?) (v2 real?) (vstride exact-integer?) (vorder exact-integer?) (points f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/APPLE/vertex_program_evaluators.txt"]{@racket[GL_APPLE_vertex_program_evaluators]}.
 }
-@defproc[(glMapVertexAttrib2fAPPLE (index exact-nonnegative-integer?) (size exact-nonnegative-integer?) (u1 flonum?) (u2 flonum?) (ustride exact-integer?) (uorder exact-integer?) (v1 flonum?) (v2 flonum?) (vstride exact-integer?) (vorder exact-integer?) (points f32vector?)) any]{
+@defproc[(glMapVertexAttrib2fAPPLE (index exact-nonnegative-integer?) (size exact-nonnegative-integer?) (u1 single-flonum?) (u2 single-flonum?) (ustride exact-integer?) (uorder exact-integer?) (v1 single-flonum?) (v2 single-flonum?) (vstride exact-integer?) (vorder exact-integer?) (points f32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/APPLE/vertex_program_evaluators.txt"]{@racket[GL_APPLE_vertex_program_evaluators]}.
 }
-@defproc[(glMaterialf (face exact-integer?) (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glMaterialf (face exact-integer?) (pname exact-integer?) (param single-flonum?)) any]{
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glMaterial.xml"]{glMaterial manpage}.
@@ -180,19 +180,19 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_acce
 @defproc[(glMatrixRotatedEXT (mode exact-integer?) (angle real?) (x real?) (y real?) (z real?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
-@defproc[(glMatrixRotatefEXT (mode exact-integer?) (angle flonum?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glMatrixRotatefEXT (mode exact-integer?) (angle single-flonum?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
 @defproc[(glMatrixScaledEXT (mode exact-integer?) (x real?) (y real?) (z real?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
-@defproc[(glMatrixScalefEXT (mode exact-integer?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glMatrixScalefEXT (mode exact-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
 @defproc[(glMatrixTranslatedEXT (mode exact-integer?) (x real?) (y real?) (z real?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
-@defproc[(glMatrixTranslatefEXT (mode exact-integer?) (x flonum?) (y flonum?) (z flonum?)) any]{
+@defproc[(glMatrixTranslatefEXT (mode exact-integer?) (x single-flonum?) (y single-flonum?) (z single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
 @defproc[(glMemoryBarrier (barriers exact-nonnegative-integer?)) any]{
@@ -203,12 +203,12 @@ See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glMemoryBarrier.xm
 @defproc[(glMemoryBarrierEXT (barriers exact-nonnegative-integer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/shader_image_load_store.txt"]{@racket[GL_EXT_shader_image_load_store]}.
 }
-@defproc[(glMinSampleShading (value flonum?)) any]{
+@defproc[(glMinSampleShading (value single-flonum?)) any]{
 Version 1.2.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man4/xhtml/glMinSampleShading.xml"]{glMinSampleShading manpage}.
 }
-@defproc[(glMinSampleShadingARB (value flonum?)) any]{
+@defproc[(glMinSampleShadingARB (value single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/sample_shading.txt"]{@racket[GL_ARB_sample_shading]}.
 
 Alias of @racket[glMinSampleShading].
@@ -328,22 +328,22 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/multitexture.txt"
 
 Alias of @racket[glMultiTexCoord1dv].
 }
-@defproc[(glMultiTexCoord1f (target exact-integer?) (s flonum?)) any]{
+@defproc[(glMultiTexCoord1f (target exact-integer?) (s single-flonum?)) any]{
 Version 1.3.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glMultiTexCoord.xml"]{glMultiTexCoord manpage}.
 }
-@defproc[(glMultiTexCoord1fARB (target exact-integer?) (s flonum?)) any]{
+@defproc[(glMultiTexCoord1fARB (target exact-integer?) (s single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/multitexture.txt"]{@racket[GL_ARB_multitexture]}.
 }
-@defproc[(glMultiTexCoord1fv (target exact-integer?) (v flonum?)) any]{
+@defproc[(glMultiTexCoord1fv (target exact-integer?) (v single-flonum?)) any]{
 Version 1.3.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glMultiTexCoord.xml"]{glMultiTexCoord manpage}.
 }
-@defproc[(glMultiTexCoord1fvARB (target exact-integer?) (v flonum?)) any]{
+@defproc[(glMultiTexCoord1fvARB (target exact-integer?) (v single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/multitexture.txt"]{@racket[GL_ARB_multitexture]}.
 
 Alias of @racket[glMultiTexCoord1fv].
@@ -414,13 +414,13 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/multitexture.txt"
 
 Alias of @racket[glMultiTexCoord2dv].
 }
-@defproc[(glMultiTexCoord2f (target exact-integer?) (s flonum?) (t flonum?)) any]{
+@defproc[(glMultiTexCoord2f (target exact-integer?) (s single-flonum?) (t single-flonum?)) any]{
 Version 1.3.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glMultiTexCoord.xml"]{glMultiTexCoord manpage}.
 }
-@defproc[(glMultiTexCoord2fARB (target exact-integer?) (s flonum?) (t flonum?)) any]{
+@defproc[(glMultiTexCoord2fARB (target exact-integer?) (s single-flonum?) (t single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/multitexture.txt"]{@racket[GL_ARB_multitexture]}.
 }
 @defproc[(glMultiTexCoord2fv (target exact-integer?) (v f32vector?)) any]{
@@ -500,13 +500,13 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/multitexture.txt"
 
 Alias of @racket[glMultiTexCoord3dv].
 }
-@defproc[(glMultiTexCoord3f (target exact-integer?) (s flonum?) (t flonum?) (r flonum?)) any]{
+@defproc[(glMultiTexCoord3f (target exact-integer?) (s single-flonum?) (t single-flonum?) (r single-flonum?)) any]{
 Version 1.3.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glMultiTexCoord.xml"]{glMultiTexCoord manpage}.
 }
-@defproc[(glMultiTexCoord3fARB (target exact-integer?) (s flonum?) (t flonum?) (r flonum?)) any]{
+@defproc[(glMultiTexCoord3fARB (target exact-integer?) (s single-flonum?) (t single-flonum?) (r single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/multitexture.txt"]{@racket[GL_ARB_multitexture]}.
 }
 @defproc[(glMultiTexCoord3fv (target exact-integer?) (v f32vector?)) any]{
@@ -586,13 +586,13 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/multitexture.txt"
 
 Alias of @racket[glMultiTexCoord4dv].
 }
-@defproc[(glMultiTexCoord4f (target exact-integer?) (s flonum?) (t flonum?) (r flonum?) (q flonum?)) any]{
+@defproc[(glMultiTexCoord4f (target exact-integer?) (s single-flonum?) (t single-flonum?) (r single-flonum?) (q single-flonum?)) any]{
 Version 1.3.
 Deprecated in version 3.1.
 
 See the @hyperlink["http://www.opengl.org/sdk/docs/man2/xhtml/glMultiTexCoord.xml"]{glMultiTexCoord manpage}.
 }
-@defproc[(glMultiTexCoord4fARB (target exact-integer?) (s flonum?) (t flonum?) (r flonum?) (q flonum?)) any]{
+@defproc[(glMultiTexCoord4fARB (target exact-integer?) (s single-flonum?) (t single-flonum?) (r single-flonum?) (q single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/ARB/multitexture.txt"]{@racket[GL_ARB_multitexture]}.
 }
 @defproc[(glMultiTexCoord4fv (target exact-integer?) (v f32vector?)) any]{
@@ -679,7 +679,7 @@ Version 1.2.
 @defproc[(glMultiTexCoordPointerEXT (texunit exact-integer?) (size exact-integer?) (type exact-integer?) (stride exact-integer?) (pointer gl-pointer?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
-@defproc[(glMultiTexEnvfEXT (texunit exact-integer?) (target exact-integer?) (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glMultiTexEnvfEXT (texunit exact-integer?) (target exact-integer?) (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
 @defproc[(glMultiTexEnvfvEXT (texunit exact-integer?) (target exact-integer?) (pname exact-integer?) (params f32vector?)) any]{
@@ -697,7 +697,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_acce
 @defproc[(glMultiTexGendvEXT (texunit exact-integer?) (coord exact-integer?) (pname exact-integer?) (params f64vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
-@defproc[(glMultiTexGenfEXT (texunit exact-integer?) (coord exact-integer?) (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glMultiTexGenfEXT (texunit exact-integer?) (coord exact-integer?) (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
 @defproc[(glMultiTexGenfvEXT (texunit exact-integer?) (coord exact-integer?) (pname exact-integer?) (params f32vector?)) any]{
@@ -724,7 +724,7 @@ Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_acce
 @defproc[(glMultiTexParameterIuivEXT (texunit exact-integer?) (target exact-integer?) (pname exact-integer?) (params u32vector?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
-@defproc[(glMultiTexParameterfEXT (texunit exact-integer?) (target exact-integer?) (pname exact-integer?) (param flonum?)) any]{
+@defproc[(glMultiTexParameterfEXT (texunit exact-integer?) (target exact-integer?) (pname exact-integer?) (param single-flonum?)) any]{
 Extension @hyperlink["http://www.opengl.org/registry/specs/EXT/direct_state_access.txt"]{@racket[GL_EXT_direct_state_access]}.
 }
 @defproc[(glMultiTexParameterfvEXT (texunit exact-integer?) (target exact-integer?) (pname exact-integer?) (params f32vector?)) any]{
