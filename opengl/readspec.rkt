@@ -481,7 +481,7 @@
        ((_int32 _intptr _int64) 'exact-integer?)
        ((_uint32 _uint64) 'exact-nonnegative-integer?)
        ((_GLsync) 'GLsync?)
-       ((_float) 'flonum?)
+       ((_float) 'single-flonum?)
        ((_double*) 'real?)
        ((_bool) 'boolean?)
        ((_pointer) 'cpointer?)
